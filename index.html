@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Básico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    .jumbotron {
+      background-color: #007bff;
+      color: #fff;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="bg-dark text-white py-4">
+    <div class="container">
+      <h1>Meu Site Básico</h1>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Corpo -->
+  <div class="container mt-4">
+    <div class="jumbotron">
+      <h2>Bem-vindo ao Meu Site Básico</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget risus vitae libero lacinia semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+      <a href="#" class="btn btn-primary btn-lg">Saiba Mais</a>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer text-center">
+    <div class="container">
+      &copy; <span id="year"></span> Meu Site Básico
+    </div>
+  </footer>
+
+  <!-- Adicionando o Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Atualiza o ano no rodapé
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
